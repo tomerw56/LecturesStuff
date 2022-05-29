@@ -1,2 +1,10 @@
-# LecturesStuff
-Holds projects for my verious lectures
+# UnitestLecture
+Code for my UT lecture:
+
+.Unit tests infrastructure in python.
+.Advantages of Pytest
+.TDD - in a nutshell.
+.Mutation testing
+.Behavioral testing
+.Coverage
+
