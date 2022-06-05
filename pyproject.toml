@@ -1,0 +1,31 @@
+[project]
+name = "lecture_stuff"
+version = "1.0.0.0"
+description = "Pyproject for Demo of UT"
+authors = [
+	"Tomer Waisman <tomer@beewise.ag>",
+
+]
+license = "FreeWare"
+readme = "README.md"
+python = "^3.8"
+
+keywords = ["UnitTest"]
+
+classifiers = [
+    "Topic :: Software Development",
+	"Topic :: Unitest"
+]
+
+# pyproject.toml
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --strict-markers"
+testpaths = [
+    "Testing"
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m not slow')",
+    "pre_commit",
+    "test_data"
+]
