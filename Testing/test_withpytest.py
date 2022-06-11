@@ -16,7 +16,7 @@ def test_div_exception():
     calculator = myCrazyCalclulator(crazy_mode=True)
     # so simple!
     with pytest.raises(RuntimeError):
-        calculator.div(a=200, b=2)
+        calculator.div(a=100, b=2)
 
 
 @pytest.mark.parametrize("crazy_mode, a,b,result", [
@@ -24,7 +24,8 @@ def test_div_exception():
     (True, 5, 2, 0),
     (True, 2, 2, 4),
     (True, 1, 2, 3),
-])
+],    ids=['testA id', 'testB id','testC id','testD id']
+)
 def test_many_ways_of_plus(crazy_mode, a, b, result):
     calculator = myCrazyCalclulator(crazy_mode=crazy_mode)
     assert calculator.add(a=a, b=b) == result

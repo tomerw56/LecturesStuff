@@ -22,3 +22,7 @@ def test_exception():
 #coverage run -m pytest test_coveragefile.py
 
 #coverage report -m
+#coverage html
+
+#for pytest-watch
+#ptw --onfail flash
